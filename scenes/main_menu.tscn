@@ -1,5 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://ceb7y5hdmbwvj"]
+[gd_scene load_steps=8 format=3 uid="uid://ceb7y5hdmbwvj"]
 
+[ext_resource type="Script" uid="uid://m7lgg1pvrqur" path="res://scenes/main_menu.gd" id="1_ekxnf"]
 [ext_resource type="Texture2D" uid="uid://crnjl73sth8i" path="res://images/6_Overpass_Spring (2).jpg" id="1_l6cm7"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ekxnf"]
@@ -32,6 +33,7 @@ anchor_right = 0.5
 anchor_bottom = 0.5
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_ekxnf")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
@@ -92,6 +94,20 @@ theme_override_styles/focus = SubResource("StyleBoxEmpty_l6cm7")
 text = "Options"
 
 [node name="quitgamebutton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_vue75")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_l6cm7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ekxnf")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_l6cm7")
+text = "Exit"
+
+[node name="quitgamebutton2" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_colors/font_color = Color(0, 0, 0, 1)
